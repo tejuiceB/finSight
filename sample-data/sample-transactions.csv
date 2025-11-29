@@ -1,0 +1,182 @@
+Date,Description,Amount,Type,Category
+2025-06-01,Salary Credit - FinTech Solutions,85000,Income,Salary
+2025-06-02,Swiggy - Dinner Order,458,Expense,Food & Dining
+2025-06-03,Uber - Ride to Office,234,Expense,Transport
+2025-06-04,BigBasket - Groceries,2450,Expense,Groceries
+2025-06-05,HDFC Bank EMI,5800,Expense,Loans & EMI
+2025-06-06,Amazon - Electronics Purchase,3200,Expense,Shopping
+2025-06-07,BESCOM Electricity Bill,1850,Expense,Bills & Utilities
+2025-06-08,Axis Bluechip SIP,3000,Expense,Investments
+2025-06-09,Zomato - Lunch Order,380,Expense,Food & Dining
+2025-06-10,Amazon Prime Subscription,179,Expense,Subscriptions
+2025-06-10,BigBasket - Weekly Groceries,1850,Expense,Groceries
+2025-06-11,Netflix Subscription,649,Expense,Entertainment
+2025-06-12,Petrol - HP Pump,1200,Expense,Transport
+2025-06-13,Myntra - Clothing Shopping,2800,Expense,Shopping
+2025-06-14,Swiggy - Weekend Brunch,890,Expense,Food & Dining
+2025-06-15,Uber - Late Night Ride,380,Expense,Transport
+2025-06-16,Apollo Pharmacy - Medicines,650,Expense,Healthcare
+2025-06-17,BookMyShow - Movie Tickets,800,Expense,Entertainment
+2025-06-18,Starbucks - Coffee,420,Expense,Food & Dining
+2025-06-19,DMart - Household Items,1450,Expense,Groceries
+2025-06-20,Mobile Recharge - Airtel,599,Expense,Bills & Utilities
+2025-06-21,Freelance Project Payment,15000,Income,Freelance
+2025-06-22,Zomato - Dinner Order,620,Expense,Food & Dining
+2025-06-23,Uber - Airport Ride,850,Expense,Transport
+2025-06-24,BigBasket - Groceries,2100,Expense,Groceries
+2025-06-25,Amazon - Book Purchase,750,Expense,Shopping
+2025-06-26,Swiggy - Late Night Order,480,Expense,Food & Dining
+2025-06-27,Gym Membership - CureFit,1200,Expense,Health & Fitness
+2025-06-28,Spotify Premium,119,Expense,Entertainment
+2025-06-29,Income Tax - TDS,8500,Expense,Taxes
+2025-06-30,Freelance Client - Bonus,5000,Income,Freelance
+2025-07-01,Salary Credit - FinTech Solutions,85000,Income,Salary
+2025-07-02,Swiggy - Weekend Brunch,720,Expense,Food & Dining
+2025-07-03,Uber - Multiple Rides,580,Expense,Transport
+2025-07-04,BigBasket - Monthly Groceries,3200,Expense,Groceries
+2025-07-05,HDFC Bank EMI,5800,Expense,Loans & EMI
+2025-07-06,Flipkart - Electronics,4500,Expense,Shopping
+2025-07-07,BESCOM Electricity Bill,2100,Expense,Bills & Utilities
+2025-07-08,Axis Bluechip SIP,3000,Expense,Investments
+2025-07-09,Zomato - Office Lunch,450,Expense,Food & Dining
+2025-07-10,Amazon Prime - Annual Renewal,1499,Expense,Subscriptions
+2025-07-10,BigBasket - Weekly Groceries,1950,Expense,Groceries
+2025-07-11,Netflix Subscription,649,Expense,Entertainment
+2025-07-12,Shell Petrol Pump,1350,Expense,Transport
+2025-07-13,H&M - Clothing Shopping,3200,Expense,Shopping
+2025-07-14,Swiggy - Sunday Brunch,950,Expense,Food & Dining
+2025-07-15,Uber - Evening Rides,420,Expense,Transport
+2025-07-16,Max Hospital - Checkup,2500,Expense,Healthcare
+2025-07-17,PVR Cinemas - Movie Tickets,900,Expense,Entertainment
+2025-07-18,Cafe Coffee Day,350,Expense,Food & Dining
+2025-07-19,Spencer's - Groceries,1650,Expense,Groceries
+2025-07-20,Broadband Bill - Airtel,999,Expense,Bills & Utilities
+2025-07-21,Consulting Work Payment,20000,Income,Freelance
+2025-07-22,Dominos - Pizza Night,880,Expense,Food & Dining
+2025-07-23,Rapido - Quick Ride,150,Expense,Transport
+2025-07-24,BigBasket - Groceries,2300,Expense,Groceries
+2025-07-25,Amazon - Home Decor,1800,Expense,Shopping
+2025-07-26,Swiggy - Late Night Order,520,Expense,Food & Dining
+2025-07-27,Cult.fit - Yoga Class,800,Expense,Health & Fitness
+2025-07-28,YouTube Premium,129,Expense,Entertainment
+2025-07-29,Professional Tax,200,Expense,Taxes
+2025-07-30,Dividend - Stocks,1200,Income,Investments
+2025-08-01,Salary Credit - FinTech Solutions,85000,Income,Salary
+2025-08-02,Swiggy - Breakfast Order,380,Expense,Food & Dining
+2025-08-03,Ola - Office Commute,280,Expense,Transport
+2025-08-04,BigBasket - Weekly Shopping,2850,Expense,Groceries
+2025-08-05,HDFC Bank EMI,5800,Expense,Loans & EMI
+2025-08-06,Myntra - Fashion Sale,2600,Expense,Shopping
+2025-08-07,BESCOM Electricity Bill,1950,Expense,Bills & Utilities
+2025-08-08,Axis Bluechip SIP,3000,Expense,Investments
+2025-08-09,Zomato - Team Lunch,1200,Expense,Food & Dining
+2025-08-10,Amazon - Gadgets,2400,Expense,Shopping
+2025-08-10,BigBasket - Groceries,2100,Expense,Groceries
+2025-08-11,Netflix Subscription,649,Expense,Entertainment
+2025-08-12,Indian Oil - Petrol,1280,Expense,Transport
+2025-08-13,Ajio - Clothing,2100,Expense,Shopping
+2025-08-14,Swiggy - Sunday Feast,1050,Expense,Food & Dining
+2025-08-15,Uber - Multiple Rides,650,Expense,Transport
+2025-08-16,Apollo Pharmacy - Medicines,850,Expense,Healthcare
+2025-08-17,Inox - Movie Night,950,Expense,Entertainment
+2025-08-18,Third Wave Coffee,480,Expense,Food & Dining
+2025-08-19,Reliance Fresh - Groceries,1750,Expense,Groceries
+2025-08-20,DTH Recharge - Tata Sky,450,Expense,Bills & Utilities
+2025-08-21,Part-time Teaching,12000,Income,Freelance
+2025-08-22,KFC - Dinner,780,Expense,Food & Dining
+2025-08-23,Metro Card Recharge,500,Expense,Transport
+2025-08-24,BigBasket - Monthly Stock,3100,Expense,Groceries
+2025-08-25,Decathlon - Sports Gear,1950,Expense,Shopping
+2025-08-26,Swiggy - Late Night Craving,580,Expense,Food & Dining
+2025-08-27,Talwalkars Gym,1500,Expense,Health & Fitness
+2025-08-28,Amazon Music,129,Expense,Entertainment
+2025-08-29,TDS Deduction,9000,Expense,Taxes
+2025-08-30,Interest - Savings Account,450,Income,Interest
+2025-09-01,Salary Credit - FinTech Solutions,85000,Income,Salary
+2025-09-02,Zomato - Breakfast,320,Expense,Food & Dining
+2025-09-03,Uber - Morning Commute,250,Expense,Transport
+2025-09-04,BigBasket - Groceries,2650,Expense,Groceries
+2025-09-05,HDFC Bank EMI,5800,Expense,Loans & EMI
+2025-09-06,Flipkart - Big Sale,3800,Expense,Shopping
+2025-09-07,BESCOM Electricity Bill,2050,Expense,Bills & Utilities
+2025-09-08,Axis Bluechip SIP,3000,Expense,Investments
+2025-09-09,Swiggy - Office Lunch,420,Expense,Food & Dining
+2025-09-10,BigBasket - Weekly Needs,2250,Expense,Groceries
+2025-09-11,Netflix Subscription,649,Expense,Entertainment
+2025-09-12,HP Petrol Pump,1320,Expense,Transport
+2025-09-13,Lifestyle - Shopping,2850,Expense,Shopping
+2025-09-14,Zomato - Weekend Feast,980,Expense,Food & Dining
+2025-09-15,Rapido - Quick Rides,380,Expense,Transport
+2025-09-16,Fortis Hospital - Consultation,1800,Expense,Healthcare
+2025-09-17,PVR - IMAX Experience,1200,Expense,Entertainment
+2025-09-18,Blue Tokai Coffee,520,Expense,Food & Dining
+2025-09-19,More - Supermarket,1850,Expense,Groceries
+2025-09-20,Internet Bill - ACT Fibernet,849,Expense,Bills & Utilities
+2025-09-22,McDonald's - Quick Bite,450,Expense,Food & Dining
+2025-09-23,Auto Rickshaw,120,Expense,Transport
+2025-09-24,BigBasket - Groceries,2450,Expense,Groceries
+2025-09-25,Amazon - Books & Stationery,950,Expense,Shopping
+2025-09-26,Swiggy - Dinner Party Order,1450,Expense,Food & Dining
+2025-09-27,HealthifyMe Premium,999,Expense,Health & Fitness
+2025-09-28,Hotstar Subscription,299,Expense,Entertainment
+2025-09-29,GST Payment,3500,Expense,Taxes
+2025-09-30,Cashback - Credit Card,850,Income,Cashback
+2025-10-01,Salary Credit - FinTech Solutions,85000,Income,Salary
+2025-10-02,Swiggy - Breakfast Special,380,Expense,Food & Dining
+2025-10-03,Uber - Airport Pickup,920,Expense,Transport
+2025-10-04,BigBasket - Festival Shopping,4200,Expense,Groceries
+2025-10-05,HDFC Bank EMI,5800,Expense,Loans & EMI
+2025-10-06,Amazon - Diwali Sale,5500,Expense,Shopping
+2025-10-07,BESCOM Electricity Bill,2200,Expense,Bills & Utilities
+2025-10-08,Axis Bluechip SIP,3000,Expense,Investments
+2025-10-09,Zomato - Celebration Dinner,1580,Expense,Food & Dining
+2025-10-10,BigBasket - Weekly Groceries,2350,Expense,Groceries
+2025-10-11,Netflix Subscription,649,Expense,Entertainment
+2025-10-12,Shell - Petrol,1380,Expense,Transport
+2025-10-13,Westside - Festive Collection,3200,Expense,Shopping
+2025-10-14,Swiggy - Sunday Brunch,1120,Expense,Food & Dining
+2025-10-15,Ola - Multiple Rides,580,Expense,Transport
+2025-10-16,Manipal Hospital - Treatment,3500,Expense,Healthcare
+2025-10-17,Carnival Cinemas,850,Expense,Entertainment
+2025-10-18,Starbucks - Coffee Date,680,Expense,Food & Dining
+2025-10-19,DMart - Monthly Shopping,2950,Expense,Groceries
+2025-10-20,Mobile Postpaid - Jio,699,Expense,Bills & Utilities
+2025-10-21,Freelance Web Design,25000,Income,Freelance
+2025-10-22,Pizza Hut - Weekend,950,Expense,Food & Dining
+2025-10-23,Metro - Daily Commute,300,Expense,Transport
+2025-10-24,BigBasket - Groceries,2550,Expense,Groceries
+2025-10-25,Tata Cliq - Electronics,2800,Expense,Shopping
+2025-10-26,Zomato - Late Night Order,580,Expense,Food & Dining
+2025-10-27,Gold's Gym - Membership,1800,Expense,Health & Fitness
+2025-10-28,Gaana Plus,99,Expense,Entertainment
+2025-10-29,Income Tax Advance,12000,Expense,Taxes
+2025-10-30,Rental Income - Property,15000,Income,Rental
+2025-11-01,Salary Credit - FinTech Solutions,85000,Income,Salary
+2025-11-02,Swiggy - Breakfast,350,Expense,Food & Dining
+2025-11-03,Uber - Office Ride,280,Expense,Transport
+2025-11-04,BigBasket - Weekly Stock,2750,Expense,Groceries
+2025-11-05,HDFC Bank EMI,5800,Expense,Loans & EMI
+2025-11-06,Myntra - Winter Collection,3600,Expense,Shopping
+2025-11-07,BESCOM Electricity Bill,1900,Expense,Bills & Utilities
+2025-11-08,Axis Bluechip SIP,3000,Expense,Investments
+2025-11-09,Zomato - Team Lunch,980,Expense,Food & Dining
+2025-11-10,Amazon - Home Appliances,4200,Expense,Shopping
+2025-11-10,BigBasket - Groceries,2150,Expense,Groceries
+2025-11-11,Netflix Subscription,649,Expense,Entertainment
+2025-11-12,Indian Oil - Petrol,1250,Expense,Transport
+2025-11-13,Shoppers Stop - Shopping,2750,Expense,Shopping
+2025-11-14,Swiggy - Sunday Special,1080,Expense,Food & Dining
+2025-11-15,Rapido - Quick Rides,420,Expense,Transport
+2025-11-16,Columbia Asia - Checkup,2200,Expense,Healthcare
+2025-11-17,BookMyShow - Latest Release,1050,Expense,Entertainment
+2025-11-18,Cafe Day - Coffee,380,Expense,Food & Dining
+2025-11-19,Spencer's - Groceries,1950,Expense,Groceries
+2025-11-20,Broadband - You Broadband,899,Expense,Bills & Utilities
+2025-11-21,Consulting Project,18000,Income,Freelance
+2025-11-22,Burger King - Quick Meal,520,Expense,Food & Dining
+2025-11-23,Uber - Evening Rides,380,Expense,Transport
+2025-11-24,BigBasket - Monthly Groceries,3350,Expense,Groceries
+2025-11-25,Amazon - Black Friday Sale,6200,Expense,Shopping
+2025-11-26,Zomato - Dinner,680,Expense,Food & Dining
+2025-11-27,Fitness First - Annual Fee,8000,Expense,Health & Fitness
+2025-11-28,Prime Video - Rental,299,Expense,Entertainment

@@ -211,19 +211,89 @@ export default function GoalTracking({ goals }: GoalTrackingProps) {
       {/* Add Goal Modal Placeholder */}
       {showAddGoal && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-md w-full">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-md w-full shadow-2xl">
             <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-              Add New Goal
+              🎯 Create Financial Goal
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Goal creation form will be available soon. This feature is under development.
-            </p>
-            <button
-              onClick={() => setShowAddGoal(false)}
-              className="w-full px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Close
-            </button>
+            
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  Goal Title
+                </label>
+                <input
+                  type="text"
+                  placeholder="e.g., Emergency Fund, Vacation"
+                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  Target Amount (₹)
+                </label>
+                <input
+                  type="number"
+                  placeholder="100000"
+                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  Current Amount (₹)
+                </label>
+                <input
+                  type="number"
+                  placeholder="0"
+                  defaultValue="0"
+                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  Deadline
+                </label>
+                <input
+                  type="date"
+                  min={new Date().toISOString().split('T')[0]}
+                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  Category
+                </label>
+                <select className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none">
+                  <option value="savings">💰 Savings</option>
+                  <option value="emergency-fund">🛡️ Emergency Fund</option>
+                  <option value="debt-clearance">💳 Debt Clearance</option>
+                  <option value="investment">📈 Investment</option>
+                  <option value="custom">🎯 Custom</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="flex gap-3 mt-6">
+              <button
+                onClick={() => setShowAddGoal(false)}
+                className="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 font-semibold rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => {
+                  // TODO: Implement goal creation
+                  alert('Goal creation will be implemented soon! For now, personalized goals are auto-generated based on your spending patterns.');
+                  setShowAddGoal(false);
+                }}
+                className="flex-1 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                Create Goal
+              </button>
+            </div>
           </div>
         </div>
       )}

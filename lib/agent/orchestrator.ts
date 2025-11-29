@@ -130,7 +130,7 @@ export class AgentOrchestrator {
       const behavioralTrends = this.generateBehavioralTrends(categorizedTransactions);
       const transactionInsights = this.generateTransactionInsights(categorizedTransactions);
       const categoryDetails = this.generateCategoryDetails(categorizedTransactions, analysis);
-      const goals = await this.loadOrCreateGoals();
+      const goals = await this.loadOrCreateGoals(analysis, categorizedTransactions);
 
       // Save results to storage
       await saveAnalysisResult(analysis);
@@ -494,18 +494,106 @@ export class AgentOrchestrator {
   }
 
   /**
-   * Load existing goals or create sample goals
+   * Load existing goals or create personalized goal suggestions
    */
-  private async loadOrCreateGoals(): Promise<FinancialGoal[]> {
+  private async loadOrCreateGoals(analysis?: AnalysisResult, transactions?: Transaction[]): Promise<FinancialGoal[]> {
     const appState = await loadAppState();
     
     if (appState.goals && appState.goals.length > 0) {
       return appState.goals;
     }
 
-    // Create a sample goal for first-time users
-    return [
-      {
+    // Generate personalized goal suggestions based on financial data
+    const suggestedGoals: FinancialGoal[] = [];
+    
+    if (analysis && transactions) {
+      const monthlyIncome = analysis.metrics.totalIncome / (transactions.length > 0 ? 6 : 1); // Assuming 6 months data
+      const monthlyExpense = analysis.metrics.totalExpense / (transactions.length > 0 ? 6 : 1);
+      const monthlySavings = monthlyIncome - monthlyExpense;
+
+      // 1. Emergency Fund (3-6 months of expenses)
+      const emergencyFundTarget = Math.round(monthlyExpense * 6);
+      suggestedGoals.push({
+        id: `goal-${Date.now()}-1`,
+        title: 'Emergency Fund (6 Months)',
+        targetAmount: emergencyFundTarget,
+        currentAmount: Math.round(monthlySavings * 0.2), // Assume 20% already saved
+        deadline: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(), // 1 year
+        category: 'emergency-fund',
+        createdAt: new Date().toISOString(),
+        status: 'on-track',
+        weeklyTarget: emergencyFundTarget / 52,
+      });
+
+      // 2. Debt Clearance (if EMI detected)
+      const emiCategories = ['Loans & EMI', 'Credit Card', 'EMI'];
+      const monthlyEMI = Object.entries(analysis.categorizedExpenses || {})
+        .filter(([cat]) => emiCategories.some(emi => cat.includes(emi)))
+        .reduce((sum, [, amt]) => sum + amt, 0) / 6;
+
+      if (monthlyEMI > 0) {
+        const debtClearanceTarget = Math.round(monthlyEMI * 12); // 1 year of EMI
+        suggestedGoals.push({
+          id: `goal-${Date.now()}-2`,
+          title: 'Clear Outstanding Debt',
+          targetAmount: debtClearanceTarget,
+          currentAmount: 0,
+          deadline: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
+          category: 'debt-clearance',
+          createdAt: new Date().toISOString(),
+          status: 'on-track',
+          weeklyTarget: debtClearanceTarget / 52,
+        });
+      }
+
+      // 3. Savings Goal (based on current savings capacity)
+      if (monthlySavings > 0) {
+        const savingsTarget = Math.round(monthlySavings * 12); // 1 year of savings
+        suggestedGoals.push({
+          id: `goal-${Date.now()}-3`,
+          title: 'Annual Savings Target',
+          targetAmount: savingsTarget,
+          currentAmount: Math.round(monthlySavings * 2), // Assume 2 months saved
+          deadline: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
+          category: 'savings',
+          createdAt: new Date().toISOString(),
+          status: 'on-track',
+          weeklyTarget: savingsTarget / 52,
+        });
+      }
+
+      // 4. Investment Goal (if user has investment capacity)
+      if (monthlySavings > monthlyExpense * 0.1) { // If savings > 10% of expenses
+        const investmentTarget = Math.round(monthlySavings * 6); // 6 months of investment
+        suggestedGoals.push({
+          id: `goal-${Date.now()}-4`,
+          title: 'Start Investment Portfolio',
+          targetAmount: investmentTarget,
+          currentAmount: 0,
+          deadline: new Date(Date.now() + 180 * 24 * 60 * 60 * 1000).toISOString(), // 6 months
+          category: 'investment',
+          createdAt: new Date().toISOString(),
+          status: 'on-track',
+          weeklyTarget: investmentTarget / 26,
+        });
+      }
+
+      // 5. Custom Goal - Vacation/Big Purchase
+      const vacationTarget = Math.round(monthlyIncome * 2); // 2 months salary
+      suggestedGoals.push({
+        id: `goal-${Date.now()}-5`,
+        title: 'Dream Vacation Fund',
+        targetAmount: vacationTarget,
+        currentAmount: 0,
+        deadline: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
+        category: 'custom',
+        createdAt: new Date().toISOString(),
+        status: 'on-track',
+        weeklyTarget: vacationTarget / 52,
+      });
+    } else {
+      // Default goal if no analysis data
+      suggestedGoals.push({
         id: `goal-${Date.now()}`,
         title: 'Emergency Fund',
         targetAmount: 100000,
@@ -515,7 +603,9 @@ export class AgentOrchestrator {
         createdAt: new Date().toISOString(),
         status: 'on-track',
         weeklyTarget: 100000 / 52,
-      },
-    ];
+      });
+    }
+
+    return suggestedGoals;
   }
 }
