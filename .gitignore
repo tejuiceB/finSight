@@ -64,3 +64,5 @@ Thumbs.db
 
 # Tasks and temp files
 tasks/
+
+.vercel
